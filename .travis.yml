@@ -11,7 +11,6 @@ matrix:
           packages:
             - gcc-5
             - g++-5
-            - make
             - libglfw3 
             - libglfw3-dev
             - libfreetype6-dev 
@@ -51,6 +50,6 @@ script:
     fi
   - |
     if [[ "${TRAVIS_OS_NAME}" == "osx" ]]; then
-      git clone https://github.com/vlang/vid
+      git clone --depth 1 https://github.com/vlang/vid
       cd vid && ../v .
     fi    
