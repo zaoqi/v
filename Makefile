@@ -1,3 +1,4 @@
+# make is supposed to run once during installation, not to compile V.
 CC ?= cc
 
 _SYS := $(shell uname 2>/dev/null || echo Unknown)
